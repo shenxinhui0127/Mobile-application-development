@@ -1,7 +1,12 @@
 package com.example.chapter3.homework;
 
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+
 import android.os.Bundle;
+
+import com.google.android.material.tabs.TabLayout;
 
 /**
  * 使用 ViewPager 和 Fragment 做一个简单版的好友列表界面
@@ -21,6 +26,14 @@ public class Ch3Ex3Activity extends AppCompatActivity {
         // TODO: ex3-1. 添加 ViewPager 和 Fragment 做可滑动界面
 
 
+//        获取视图的id以便操作
+        ViewPager viewPager = findViewById(R.id.view_pager);
+        TabLayout tabLayout = findViewById(R.id.tab_layout);
+
+//        adapter 数据容器绑定器
+        MyPagerAdapter adapter = new MyPagerAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(adapter);
+        tabLayout.setupWithViewPager(viewPager);
 
         // TODO: ex3-2, 添加 TabLayout 支持 Tab
     }
