@@ -92,14 +92,14 @@ public class FriendListFragment extends Fragment {
         // 填充列表数据
         adapter.add("Friend 1");
         adapter.add("Friend 2");
-        adapter.add("Friend 1");
-        adapter.add("Friend 2");
-        adapter.add("Friend 1");
-        adapter.add("Friend 2");
-        adapter.add("Friend 1");
-        adapter.add("Friend 2");
-        adapter.add("Friend 1");
-        adapter.add("Friend 2");
+        adapter.add("Friend 3");
+        adapter.add("Friend 4");
+        adapter.add("Friend 5");
+        adapter.add("Friend 6");
+        adapter.add("Friend 7");
+        adapter.add("Friend 8");
+        adapter.add("Friend 9");
+        adapter.add("Friend 10");
 
         // 继续添加其他好友数据
         listView.setAdapter(adapter);
